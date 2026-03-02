@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanderlust Chronicles — Travel Blog</title>
+  <meta name="description" content="A travel blog by Bubbles — documenting adventures across China and beyond, with stories, photos, and travel tips from a graduate student in Hong Kong.">
+
+  <!-- Google Fonts: Poppins for headings, Inter for body text -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Free (icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================
+       NAVIGATION BAR
+       ============================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <!-- Logo with compass icon -->
+      <a href="#home" class="nav-logo">
+        <i class="fa-solid fa-compass"></i>
+        <span>Wanderlust</span>
+      </a>
+
+      <!-- Hamburger toggle for mobile (CSS-only) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Toggle navigation">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+
+      <!-- Navigation links -->
+      <ul class="nav-links">
+        <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="#destinations"><i class="fa-solid fa-map-location-dot"></i> Destinations</a></li>
+        <li><a href="#about"><i class="fa-solid fa-user-astronaut"></i> About Me</a></li>
+        <li><a href="#contact"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============================
+       HERO SECTION (Homepage Banner)
+       ============================ -->
+  <header class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tagline"><i class="fa-solid fa-location-dot"></i> Explore &middot; Dream &middot; Discover</p>
+      <h1 class="hero-title">Wanderlust Chronicles</h1>
+      <p class="hero-subtitle">Documenting adventures across China and beyond — from misty mountains to vibrant city streets.</p>
+      <a href="#featured" class="hero-btn">Read My Stories <i class="fa-solid fa-arrow-down"></i></a>
+    </div>
+  </header>
+
+  <!-- ============================
+       FEATURED STORIES SECTION
+       (Card-based travel journal entries)
+       ============================ -->
+  <section class="section featured" id="featured">
+    <div class="container">
+      <h2 class="section-title">
+        <i class="fa-solid fa-star"></i> Featured Stories
+      </h2>
+      <p class="section-subtitle">Hand-picked tales from my most unforgettable journeys.</p>
+
+      <div class="card-grid">
+        <!-- Story Card 1 -->
+        <article class="story-card">
+          <div class="card-image">
+            <img src="image\1.jpeg" alt="Tropical beach in Sanya with turquoise water" loading="lazy">
+            <span class="card-badge"><i class="fa-solid fa-fire"></i> Popular</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span><i class="fa-regular fa-calendar"></i> Jan 15, 2026</span>
+              <span><i class="fa-solid fa-location-dot"></i> Sanya, Hainan</span>
+            </div>
+            <h3 class="card-title">Golden Hour at Yalong Bay</h3>
+            <p class="card-text">The soft white sand of Hainan's coast stretches endlessly where the South China Sea meets palm-lined shores. Watching the sun melt into the horizon with my toes buried in warm sand — this is the kind of peace that can't be photographed, only felt.</p>
+            <div class="card-tags">
+              <span class="tag">Beach</span>
+              <span class="tag">Nature</span>
+              <span class="tag">Photography</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Story Card 2 -->
+        <article class="story-card">
+          <div class="card-image">
+            <img src="image\2.jpeg" alt="Crystal-clear lake surrounded by autumn trees in Jiuzhaigou" loading="lazy">
+            <span class="card-badge"><i class="fa-solid fa-heart"></i> Editor's Pick</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span><i class="fa-regular fa-calendar"></i> Oct 22, 2025</span>
+              <span><i class="fa-solid fa-location-dot"></i> Jiuzhaigou, Sichuan</span>
+            </div>
+            <h3 class="card-title">Autumn in Jiuzhaigou Valley</h3>
+            <p class="card-text">Jiuzhaigou in autumn is nature's most extravagant show. Crystal-clear turquoise lakes mirror the fiery reds and golds of surrounding forests, and every step along the wooden boardwalks reveals a view more breathtaking than the last.</p>
+            <div class="card-tags">
+              <span class="tag">Hiking</span>
+              <span class="tag">Mountains</span>
+              <span class="tag">Nature</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Story Card 3 -->
+        <article class="story-card">
+          <div class="card-image">
+            <img src="image\3.jpeg" alt="Magical winter landscape with illuminated ice sculptures in Harbin" loading="lazy">
+            <span class="card-badge"><i class="fa-solid fa-snowflake"></i> Winter</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span><i class="fa-regular fa-calendar"></i> Dec 5, 2025</span>
+              <span><i class="fa-solid fa-location-dot"></i> Harbin, Heilongjiang</span>
+            </div>
+            <h3 class="card-title">Winter Magic at the Harbin Ice Festival</h3>
+            <p class="card-text">Walking through Harbin's ice and snow wonderland felt like stepping into a frozen fairy tale. Towering ice palaces glowed in neon hues against the dark Manchurian sky, and at minus thirty degrees, even my eyelashes froze — but the wonder kept me warm.</p>
+            <div class="card-tags">
+              <span class="tag">Festival</span>
+              <span class="tag">Winter</span>
+              <span class="tag">Adventure</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Story Card 4 -->
+        <article class="story-card">
+          <div class="card-image">
+            <img src="image\4.jpeg" alt="Traditional Japanese temple in Kyoto with cherry blossoms" loading="lazy">
+            <span class="card-badge"><i class="fa-solid fa-seedling"></i> Spring</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span><i class="fa-regular fa-calendar"></i> Apr 3, 2025</span>
+              <span><i class="fa-solid fa-location-dot"></i> Kyoto, Japan</span>
+            </div>
+            <h3 class="card-title">Cherry Blossom Season in Kyoto</h3>
+            <p class="card-text">My first trip outside China as a student in Hong Kong brought me to Kyoto in spring — a watercolor painting come to life. Walking through the Philosopher's Path lined with sakura, petals drifting like pink snow, I finally understood why hanami is so deeply woven into Japanese culture.</p>
+            <div class="card-tags">
+              <span class="tag">Culture</span>
+              <span class="tag">Spring</span>
+              <span class="tag">Asia</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Story Card 5 -->
+        <article class="story-card">
+          <div class="card-image">
+            <img src="image\5.jpeg" alt="Colorful bazaar with spices and textiles in Kashgar" loading="lazy">
+            <span class="card-badge"><i class="fa-solid fa-gem"></i> Hidden Gem</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span><i class="fa-regular fa-calendar"></i> Sep 18, 2025</span>
+              <span><i class="fa-solid fa-location-dot"></i> Kashgar, Xinjiang</span>
+            </div>
+            <h3 class="card-title">Lost in the Grand Bazaar of Kashgar</h3>
+            <p class="card-text">The Sunday Grand Bazaar of Kashgar is a sensory overload in the best way — mountains of cumin and dried fruits in every color, the call to prayer echoing over ancient mud-brick lanes, and the warmest naan bread served by the kindest strangers along the old Silk Road.</p>
+            <div class="card-tags">
+              <span class="tag">Market</span>
+              <span class="tag">Culture</span>
+              <span class="tag">Food</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Story Card 6 -->
+        <article class="story-card">
+          <div class="card-image">
+            <img src="image\6.jpeg" alt="Colorful coastal scene with buildings by the sea in Hong Kong" loading="lazy">
+            <span class="card-badge"><i class="fa-solid fa-sun"></i> Summer</span>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span><i class="fa-regular fa-calendar"></i> Jul 27, 2025</span>
+              <span><i class="fa-solid fa-location-dot"></i> Hong Kong Islands</span>
+            </div>
+            <h3 class="card-title">Island Hopping Around Hong Kong</h3>
+            <p class="card-text">Most people picture skyscrapers when they think of Hong Kong, but the outlying islands tell a different story. Drifting between Cheung Chau and Lamma by ferry, watching pastel villages against lush green hills with the South China Sea breeze in my hair — this is the side of my new home I love most.</p>
+            <div class="card-tags">
+              <span class="tag">Islands</span>
+              <span class="tag">Summer</span>
+              <span class="tag">Coast</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       DESTINATIONS SECTION
+       (Category grid with overlay labels)
+       ============================ -->
+  <section class="section destinations" id="destinations">
+    <div class="container">
+      <h2 class="section-title">
+        <i class="fa-solid fa-earth-americas"></i> Destinations
+      </h2>
+      <p class="section-subtitle">Browse by region — from the heart of China to the far corners of the globe, there's always a new story waiting.</p>
+
+      <div class="dest-grid">
+        <!-- Destination Category 1 -->
+        <div class="dest-card dest-card-large" data-modal="modal-asia">
+          <img src="https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=800&q=80" alt="The Great Wall of China winding through misty mountains" loading="lazy">
+          <div class="dest-overlay">
+            <span class="dest-stamp"><i class="fa-solid fa-passport"></i></span>
+            <h3>Asia</h3>
+            <p>20 Stories</p>
+          </div>
+        </div>
+
+        <!-- Destination Category 2 -->
+        <div class="dest-card" data-modal="modal-europe">
+          <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=600&q=80" alt="European architecture with Eiffel Tower" loading="lazy">
+          <div class="dest-overlay">
+            <span class="dest-stamp"><i class="fa-solid fa-passport"></i></span>
+            <h3>Europe</h3>
+            <p>5 Stories</p>
+          </div>
+        </div>
+
+        <!-- Destination Category 3 -->
+        <div class="dest-card" data-modal="modal-africa">
+          <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?w=600&q=80" alt="Elephants crossing the African savanna at golden hour" loading="lazy">
+          <div class="dest-overlay">
+            <span class="dest-stamp"><i class="fa-solid fa-passport"></i></span>
+            <h3>Africa</h3>
+            <p>3 Stories</p>
+          </div>
+        </div>
+
+        <!-- Destination Category 4 -->
+        <div class="dest-card" data-modal="modal-americas">
+          <img src="https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?w=600&q=80" alt="Vibrant Latin American market with colorful textiles" loading="lazy">
+          <div class="dest-overlay">
+            <span class="dest-stamp"><i class="fa-solid fa-passport"></i></span>
+            <h3>Americas</h3>
+            <p>4 Stories</p>
+          </div>
+        </div>
+
+        <!-- Destination Category 5 -->
+        <div class="dest-card" data-modal="modal-oceania">
+          <img src="https://images.unsplash.com/photo-1589330694653-ded6df03f754?w=600&q=80" alt="Turquoise ocean surrounding a tropical island in the Pacific" loading="lazy">
+          <div class="dest-overlay">
+            <span class="dest-stamp"><i class="fa-solid fa-passport"></i></span>
+            <h3>Oceania</h3>
+            <p>3 Stories</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Travel Stats Bar -->
+      <div class="stats-bar">
+        <div class="stat-item">
+          <i class="fa-solid fa-map"></i>
+          <span class="stat-number">30+</span>
+          <span class="stat-label">Provinces</span>
+        </div>
+        <div class="stat-item">
+          <i class="fa-solid fa-camera"></i>
+          <span class="stat-number">1,500+</span>
+          <span class="stat-label">Photos</span>
+        </div>
+        <div class="stat-item">
+          <i class="fa-solid fa-pen-nib"></i>
+          <span class="stat-number">35</span>
+          <span class="stat-label">Stories</span>
+        </div>
+        <div class="stat-item">
+          <i class="fa-solid fa-route"></i>
+          <span class="stat-number">50,000+</span>
+          <span class="stat-label">KM Traveled</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       DESTINATION POP-UP MODALS
+       ============================ -->
+
+  <!-- Asia Modal -->
+  <div class="dest-modal-overlay" id="modal-asia">
+    <div class="dest-modal">
+      <button class="dest-modal-close" aria-label="Close">&times;</button>
+      <div class="dest-modal-header">
+        <i class="fa-solid fa-earth-asia"></i>
+        <h3>Asia</h3>
+      </div>
+      <div class="dest-modal-body">
+        <p>I remember the smell of cumin lamb skewers drifting through the night markets of Xi'an, my dad's hand warm around mine as we navigated the neon-lit crowds. That was the first time I understood that food could tell a story — that a single bite could carry centuries of history.</p>
+        <p>Growing up, those family road trips across China shaped everything I believe about travel. From the misty karst peaks of Guilin to the buzzing streets of Hong Kong where I now call home, Asia has been my classroom, my comfort, and my constant source of wonder.</p>
+        <p class="dest-modal-cta"><i class="fa-solid fa-compass"></i> Come explore the continent that started it all — one story at a time.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Europe Modal -->
+  <div class="dest-modal-overlay" id="modal-europe">
+    <div class="dest-modal">
+      <button class="dest-modal-close" aria-label="Close">&times;</button>
+      <div class="dest-modal-header">
+        <i class="fa-solid fa-landmark"></i>
+        <h3>Europe</h3>
+      </div>
+      <div class="dest-modal-body">
+        <p>The first time I stepped off a plane in Europe, I teared up. Not from sadness, but from the sheer weight of standing inside centuries of history I'd only ever read about. I remember sitting in a tiny Parisian café, the smell of fresh croissants curling through the autumn air, thinking: the world is so much bigger than I imagined.</p>
+        <p>Coming from China, the contrast was staggering — the cobblestone streets, the quiet church bells, the way strangers lingered over wine and conversation. Europe taught me that travel isn't about ticking off landmarks; it's about slowing down long enough to absorb a place.</p>
+        <p class="dest-modal-cta"><i class="fa-solid fa-compass"></i> Dive into my European adventures and see the continent through a traveler from the East.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Africa Modal -->
+  <div class="dest-modal-overlay" id="modal-africa">
+    <div class="dest-modal">
+      <button class="dest-modal-close" aria-label="Close">&times;</button>
+      <div class="dest-modal-header">
+        <i class="fa-solid fa-sun"></i>
+        <h3>Africa</h3>
+      </div>
+      <div class="dest-modal-body">
+        <p>Nothing prepares you for the silence of the African savanna at dawn — a silence so vast it hums. I remember standing in the golden grass, watching a herd of elephants move like slow clouds across the horizon, and feeling something shift deep inside me.</p>
+        <p>Africa taught me humility. In the warmth of a village welcome, in the laughter of children chasing dust, I found a kind of richness that has nothing to do with money. It redefined what "home" means — it's not a place, it's a feeling of belonging.</p>
+        <p class="dest-modal-cta"><i class="fa-solid fa-compass"></i> These stories carry the heartbeat of a continent that changed how I see the world.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Americas Modal -->
+  <div class="dest-modal-overlay" id="modal-americas">
+    <div class="dest-modal">
+      <button class="dest-modal-close" aria-label="Close">&times;</button>
+      <div class="dest-modal-header">
+        <i class="fa-solid fa-mountain-sun"></i>
+        <h3>Americas</h3>
+      </div>
+      <div class="dest-modal-body">
+        <p>The first time I wandered through a Latin American market, the colors hit me before anything else — towers of tropical fruit, hand-woven textiles in every shade, and music tumbling from every corner. It reminded me of the night markets back home in China, but with a rhythm entirely its own.</p>
+        <p>Then there was the silence of the North American wilderness — standing at the edge of a canyon so vast it swallowed my voice whole. The Americas taught me that a single continent can hold both the loudest celebrations and the quietest solitude.</p>
+        <p class="dest-modal-cta"><i class="fa-solid fa-compass"></i> Come explore a land of beautiful contrasts through my eyes.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Oceania Modal -->
+  <div class="dest-modal-overlay" id="modal-oceania">
+    <div class="dest-modal">
+      <button class="dest-modal-close" aria-label="Close">&times;</button>
+      <div class="dest-modal-header">
+        <i class="fa-solid fa-water"></i>
+        <h3>Oceania</h3>
+      </div>
+      <div class="dest-modal-body">
+        <p>There is something about standing on an island at what feels like the edge of the world, surrounded by nothing but endless ocean and sky. In Oceania, I found a stillness I didn't know I was looking for — the kind that comes from being so far from everything familiar.</p>
+        <p>The ancient stories of the indigenous peoples humbled me, their deep connection to land and sea echoing something I recognized from my own culture's reverence for nature. Oceania reminded me that the quietest places often speak the loudest.</p>
+        <p class="dest-modal-cta"><i class="fa-solid fa-compass"></i> Step into my stories from the most peaceful corner of the earth.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================
+       ABOUT ME SECTION
+       (Travel story + personal intro)
+       ============================ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <h2 class="section-title">
+        <i class="fa-solid fa-user-astronaut"></i> About Me
+      </h2>
+      <p class="section-subtitle">The story behind the stories.</p>
+
+      <div class="about-grid">
+        <!-- Profile Image -->
+        <div class="about-image">
+          <img src="image\7.jpg" alt="Traveler with backpack overlooking mountain vista" loading="lazy">
+          <div class="about-image-badge">
+            <i class="fa-solid fa-quote-left"></i>
+          </div>
+        </div>
+
+        <!-- Bio Content -->
+        <div class="about-content">
+          <h3>Hi, I'm Bubbles — a curious soul with a passport stamped with stories from every corner of China.</h3>
+          <p>
+            What started as a childhood spent tagging along on my parents' road trips across China turned into a lifelong obsession. I traded my hometown for a student visa in Hong Kong, but my love for slow travel never faded. Now, as a graduate student navigating the vibrant streets of this city, I still find myself chasing sunsets and writing about the people and places that make this world feel like home.
+          </p>
+          <p>
+            This blog is my digital journal — part travel guide, part photo diary, part love letter to the places that have shaped me. Whether you're planning your first solo trip or your fiftieth, I hope these stories inspire you to book that ticket, take that detour, and say yes to the unexpected.
+          </p>
+
+          <!-- Travel Philosophy Cards -->
+          <div class="philosophy-cards">
+            <div class="philosophy-card">
+              <i class="fa-solid fa-heart"></i>
+              <h4>Travel Slow</h4>
+              <p>Spend weeks, not days. The best stories come from staying long enough to feel like a local.</p>
+            </div>
+            <div class="philosophy-card">
+              <i class="fa-solid fa-leaf"></i>
+              <h4>Travel Light</h4>
+              <p>One backpack, minimal footprint. Sustainable travel isn't a trend — it's a responsibility.</p>
+            </div>
+            <div class="philosophy-card">
+              <i class="fa-solid fa-people-group"></i>
+              <h4>Travel Kind</h4>
+              <p>Every destination is someone's home. Respect cultures, support local businesses, leave places better.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       CONTACT SECTION
+       ============================ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2 class="section-title">
+        <i class="fa-solid fa-paper-plane"></i> Get in Touch
+      </h2>
+      <p class="section-subtitle">Have a question, collaboration idea, or just want to say hi? Drop me a message!</p>
+
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper">
+          <form class="contact-form" action="#" method="POST">
+            <div class="form-group">
+              <label for="name"><i class="fa-solid fa-user"></i> Your Name</label>
+              <input type="text" id="name" name="name" placeholder="e.g. Jane Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="email"><i class="fa-solid fa-envelope"></i> Email Address</label>
+              <input type="email" id="email" name="email" placeholder="e.g. jane@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="subject"><i class="fa-solid fa-tag"></i> Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="e.g. Collaboration Inquiry">
+            </div>
+            <div class="form-group">
+              <label for="message"><i class="fa-solid fa-message"></i> Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="form-btn">
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Info Sidebar -->
+        <div class="contact-info">
+          <div class="info-card">
+            <i class="fa-solid fa-location-dot"></i>
+            <h4>Based In</h4>
+            <p>Currently in Hong Kong<br>Grew up traveling across China</p>
+          </div>
+          <div class="info-card">
+            <i class="fa-solid fa-clock"></i>
+            <h4>Response Time</h4>
+            <p>Usually within 48 hours.<br>Faster between lectures!</p>
+          </div>
+          <div class="info-card">
+            <i class="fa-solid fa-envelope"></i>
+            <h4>Email</h4>
+            <p>hello@wanderlustchronicles.com</p>
+          </div>
+
+          <!-- Social Media Links -->
+          <div class="social-links">
+            <h4>Follow the Journey</h4>
+            <div class="social-icons">
+              <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="social-icon" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       FOOTER
+       ============================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Footer Brand -->
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo">
+            <i class="fa-solid fa-compass"></i> Wanderlust Chronicles
+          </a>
+          <p>Stories, photos, and inspiration from a childhood of wandering across China — now writing from Hong Kong. Made with love and a lot of milk tea.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#featured">Featured Stories</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Top Destinations -->
+        <div class="footer-links">
+          <h4>Top Destinations</h4>
+          <ul>
+            <li><a href="#">Sanya, Hainan</a></li>
+            <li><a href="#">Jiuzhaigou, Sichuan</a></li>
+            <li><a href="#">Kyoto, Japan</a></li>
+            <li><a href="#">Hong Kong Islands</a></li>
+            <li><a href="#">Harbin, Heilongjiang</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Wanderlust Chronicles. All rights reserved. | AIDM7350 Assignment</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Destination Modal Script -->
+  <script>
+    // Open modal when clicking a destination card
+    document.querySelectorAll('.dest-card[data-modal]').forEach(function(card) {
+      card.addEventListener('click', function() {
+        var modalId = this.getAttribute('data-modal');
+        var modal = document.getElementById(modalId);
+        if (modal) {
+          modal.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        }
+      });
+    });
+
+    // Close modal when clicking close button
+    document.querySelectorAll('.dest-modal-close').forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        this.closest('.dest-modal-overlay').classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // Close modal when clicking overlay background
+    document.querySelectorAll('.dest-modal-overlay').forEach(function(overlay) {
+      overlay.addEventListener('click', function(e) {
+        if (e.target === this) {
+          this.classList.remove('active');
+          document.body.style.overflow = '';
+        }
+      });
+    });
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.dest-modal-overlay.active').forEach(function(modal) {
+          modal.classList.remove('active');
+          document.body.style.overflow = '';
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
